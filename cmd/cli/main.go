@@ -35,7 +35,7 @@ func main() {
 	out := flag.String("o", "./", "Folder to place downloaded asset(s)")
 	flag.Parse()
 
-	//Setup customer logs
+	//Setup custom logs
 	errorLog := log.New(os.Stderr, "ERROR\t ", log.LUTC|log.Ltime|log.Lshortfile)
 	infoLog := log.New(os.Stderr, "INFO\t ", log.LUTC|log.Ltime|log.Lshortfile)
 
